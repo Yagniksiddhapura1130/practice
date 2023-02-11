@@ -4,85 +4,82 @@ using namespace std;
 class info
 {
 	public:
-		int id,age;
-		string name;
-		string gender;
-	
-		void getinfo()
+	int n ;
+	string name; 
+	string order;
+		
+//		void getinfo()
+//		
+//		{
+//			cout<<"-------------tops tech fast food ------------"<<endl<<endl;
+//			cout<<"enter your name : ";
+//			cin>>name;
+//				
+//		}
+		void displayinfo()
 		{	
-			cout<<"enter your id :";
-			cin>>id;
+			int ordr;
+		
+			cout<<"\t\t\t\t-------------tops tech food ------------"<<endl<<endl;
 			
 			cout<<"enter your name : ";
-			cin>>name;	
+			cin>>name;
+			cout<<"hello "<<name<<endl;
 			
-			cout<<"enter your gender : ";
-			cin>>gender;
+			cout<<endl<<"would you like to order ?"<<endl<<endl;
+			cout<<"\t\t\t\t--------------menu-------------"<<endl<<endl;
 			
-			cout<<"enter your age : ";
-			cin>>age;
+			cout<<"1) pizzas"<<endl;
+			cout<<"2) sandwich"<<endl;
+			cout<<"3) rolls"<<endl;	
+			cout<<"4) biryani"<<endl;
 			
-		}
-			
-			void displayinfo()
-				
-		{
-			cout<<endl<<endl<<"your id is = "<<id<<endl;
-			cout<<"your name is = "<<name<<endl;
-			cout<<"your gender is = "<<gender<<endl;
-			cout<<"your age is= "<<age<<endl;
-				
-		}
-};
+            cout<<"please enter your choice : ";
+            cin>>ordr;
 
-class principle:public info
-{
-	public:
-		int salary;
-		void getsalary()
-		{
-			cout<<"enter your salary : ";
-			cin>>salary;
-						
-		}
-		
-		void displaysalary()
-		{
-			cout<<endl<<endl<<"salary of principle is :  "<<salary<<endl;
-			
-		}
-};
-class teacher:public info
-{
-	public:
-		int salary;
-		void getsalary1()
-		{
-			cout<<"enter your salary : ";
-			cin>>salary;
-						
-		}
-		
-		void display1()
-		{
-			cout<<endl<<endl<<"salary of teacher is :  "<<salary<<endl;
-			
-		}
+
+			}
+
+        void ordrdetails()
+        {
+            int ordr;
+           
+        switch(ordr)
+        { case 1:
+            cout<<endl<<"double cheese margarita = 250"<<endl;
+            cout<<"cheese corn=200"<<endl;
+            cout<<"veg pizza=280"<<endl;
+
+            break;
+
+            case 2:
+            cout<<endl<<"Aloo Grilled Sandwich=70"<<endl;
+            cout<<"Mixed Vegetable Sandwich=100"<<endl;
+            cout<<"Corn Cheese Sandwich=60"<<endl;
+            cout<<"veg sandwitch=80"<<endl;
+
+            break;
+        }
+
+        void ordrprize()
+
+        { int  quantity,orderprice=0;
+
+        
+
+        }
+
+        
+
+        }
 };
 
 int main()
 {
-	principle p1;
-	teacher t1;
-	p1.getinfo();
-	p1.getsalary();
-	t1.getinfo();
-	t1.getsalary1();
-	p1.displayinfo();
-	t1.displayinfo();
-	p1.displaysalary();
-	t1.display1();
-	
-	
+	info i;
+//	i.getinfo();//
+	i.displayinfo();
+    i.ordrdetails();
+
 	return 0;
 }
